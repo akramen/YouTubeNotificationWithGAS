@@ -1,6 +1,6 @@
 const ACCESS_TOKEN = "YOUR_ACCESS_TOKEN_HERE" //ここにあなたのLINEのアクセストークンを貼り付けてください。
 
-function youtubeFetcher() {
+function YouTubeFeed() {
 
   const ss = SpreadsheetApp.openById('YOUR_SPREADSHEET_ID_HERE') //スプレッドシートのIDをここに貼り付けてください。
   const sheet = ss.getSheetByName('シート1'); //シートの名前(ここも変える必要があるかも?)
@@ -33,7 +33,7 @@ function youtubeFetcher() {
 }
 
 
-function sendLineMessage(link) { //LINEにメッセージを送信する関数
+function SendLineMessage(link) { //LINEにメッセージを送信する関数
 
   UrlFetchApp.fetch('https://api.line.me/v2/bot/message/broadcast', { //LINEの友達全員にメッセージを送る 参照:https://developers.line.biz/ja/docs/messaging-api/sending-messages/
     method: 'post',
