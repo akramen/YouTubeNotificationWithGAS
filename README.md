@@ -23,5 +23,8 @@ GASファイルの５行目にある`const ss = SpreadsheetApp.openById('YOUR_SP
 
 自分のLINEBOTからメッセージが来て、それが指定したYouTubeチャンネルの最新の動画ということを確認してください。　もし、メッセージが送られて来なかったら、もう一度手順を確認してみてください。
 
+もし、自動で新しい動画をLINEに送ってほしいのならば、YouTubeFeedのトリガーを設定することをおすすめします。私は、下記の問題点を踏まえて２時間に一回YouTubeFeedを実行するようにしています。
+
 ## 問題点
-https://cloud.google.com/apis/docs/capping-api-usage?hl=ja&visit_id=637668617549827626-2772998193&rd=1 これが適用されるはずだけど確認した限り、YouTube Date ApiをGASで実行したときは、制限が確認できなかった。
+https://cloud.google.com/apis/docs/capping-api-usage?hl=ja&visit_id=637668617549827626-2772998193&rd=1 これが適用されるはずだけど確認した限り、YouTube Date APIをGASで実行したときは、制限が確認できなかった。
+
