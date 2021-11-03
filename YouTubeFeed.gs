@@ -17,11 +17,6 @@ function youtubeFetcher() {
     });
 
 
-    /*let url = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=CHANNEL_ID&maxResults=1&order=date&type=video&key=API_KEY"
-    var res = UrlFetchApp.fetch(url);
-    let obj = JSON.parse(res)*/
-
-
     let obj = JSON.parse(video) //取得したデータをオブジェクトの形式に
     let videoid = obj["items"][0]["id"]["videoId"] //オブジェクトの中からvideoIdを取り出し
     let link = "https://www.youtube.com/watch?v=" + videoid //YouTubeのリンクにする
