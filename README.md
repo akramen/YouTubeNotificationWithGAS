@@ -28,3 +28,5 @@ GASファイルの５行目にある`const ss = SpreadsheetApp.openById('YOUR_SP
 ## 問題点
 https://cloud.google.com/apis/docs/capping-api-usage?hl=ja&visit_id=637668617549827626-2772998193&rd=1 これが適用されるはずだけど確認した限り、YouTube Date APIをGASで実行したときは、制限が確認できなかった。
 
+## その他
+他に問題点があったり、実行できなかったらhttps://twitter.com/akramenM かDiscord(akramen#8352)に連絡してください。
